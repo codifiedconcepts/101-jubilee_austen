@@ -35,31 +35,40 @@ header {
 header h1 {
     font-family: 'Lora', serif;
     font-size: 30px;
+    letter-spacing: -.6px;           /* photoshop letter spacing (px) * font-size (px) / 1000 = css letter-spacing (px) */
     color: #bbc085;
-    padding: 65px 0 65px 25px;
+    margin: 0;
+    padding: 115px 0 105px 25px;
 }
+
 nav {
     float: right;
-    padding: 75px 25px;
+}
+nav ul {
+    margin: 0;
+    padding: 125px 25px 105px 0;
 }
 nav ul li{
     display: inline-block;
 }
 nav ul li a {
+    font-size: 18px;
+    letter-spacing: -.36px;
+    color: #828282;
     text-transform: uppercase;
     text-decoration: none;
-    font-size: 18px;
-    color: #828282;
     padding-left: 80px;
 }
+
 header h2 {
     width: 1000px;
     clear: both;
     font-family: 'Lora', serif;
     font-size: 72px;
+    letter-spacing: -1.44px;
     line-height: 80px;
     color: #9b9b9b;
-    padding: 20px 0 20px 25px;
+    padding-left: 25px;
 }
 header h2 span {
     color: #2b2b2b;
@@ -68,20 +77,24 @@ header h2 span {
 /****** ABOUT ******/
 
 #about .full-width {
-    padding: 80px 0;
+    padding: 140px 0;
 }
 
 #about h2 {
     font-family: 'Lora', serif;
     font-size: 36px;
+    letter-spacing: -.72px;
+    margin: 0 0 50px;
     padding-left: 50px;
 }
+
 #about p {
     font-size: 21px;
-    color: #7f7f7f;
+    letter-spacing: -.42px;
     line-height: 40px;
-    padding-left: 50px;
-    padding-right: 50px;
+    color: #7f7f7f;
+    margin: 0;
+    padding: 0 50px;
 }
 
 /****** WORK ******/
@@ -90,9 +103,8 @@ header h2 span {
     background-color: #f9ceb7;
     text-align: center;
 }
-
 #work .full-width {
-    padding: 115px 0;
+    padding: 130px 0;
 }
 
 #work img {
@@ -102,13 +114,15 @@ header h2 span {
 #work h3 {
     font-size: 24px;
     line-height: 32px;
-    width: 190px;
+    letter-spacing: -.48px;
+    width: 180px;
     margin: 0 auto;
 }
 
 #work p {
     font-family: 'Lora', serif;
     font-size: 18px;
+    letter-spacing: -.36px;
     line-height: 30px;
     padding: 0 50px;
 }
@@ -119,42 +133,54 @@ header h2 span {
     background-color: #ebebeb;
 }
 #contact .full-width {
-    padding: 110px 0;
+    padding: 120px 0;
 }
+
 #contact img#contact-img {
+    width: 526px;
     margin-left: 25px;
     border: 12px solid #ffffff;
 }
-#contact h2, #contact #email-header, #contact #socialmedia-header, #contact ul {
-    padding-left: 115px;
+
+#contact-info {
+    width: 450px;
+    padding: 0 25px 0 125px;
 }
 #contact #envelope {
-    padding: 0 10px 0 115px;
+    margin-bottom: -5px;
+    padding-right: 10px;
 }
 #contact h2 {
     font-family: 'Lora', serif;
     font-size: 36px;
+    letter-spacing: -.72px;
     line-height: 44px;
+    margin: 40px auto 0;
 }
 #contact #email-header{
     font-size: 32px;
     font-weight: 400;
+    letter-spacing: -.64px;
     line-height: 44px;
-    margin: -30px 0 5px 0;
+    margin: 6px 0;
 }
 #contact #socialmedia-header {
-    font-weight: bold;
     font-size: 29px;
+    font-weight: bold;
+    letter-spacing: -.58px;
     line-height: 44px;
     margin: 40px 0 0 0;
 }
 #contact a {
     text-decoration: none;
-    color: #c49075;
-    font-weight: bold;
     font-size: 28px;
+    font-weight: bold;
+    letter-spacing: -.56px;
+    line-height: 44px;
+    color: #c49075;
 }
 #contact ul {
+    padding: 0;
     list-style: none;
 }
 #contact ul li {
@@ -162,5 +188,5 @@ header h2 span {
 }
 #contact ul img {
     font-size: 32px;
-    padding-right: 48px;
+    padding-right: 40px;
 }
