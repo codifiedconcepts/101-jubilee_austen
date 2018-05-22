@@ -3,17 +3,19 @@
 body {
     font-family: 'Source Sans Pro', sans-serif;
     color: #2b2b2b;
+    min-width: 1200px;   /* Temporary fix to prevent shrinking on small screens until we make this responsive. */
 }
 
 #about, #work, #contact {
-    height: 600px;
+    overflow: auto;   /* Flexible way to handle a collapsing parent container when we have floating child elements. */
+
 }
 
 /****** GRID ******/
 
 .full-width {
     width: 1200px;
-    margin: 0 auto;
+    margin: 0 auto;   /* Using auto means when a screen is larger than 1200px, the additional space is divided evenly amongst the left and right side, leaving the div centered. */
 }
 .half-width {
     width: 600px;
@@ -28,14 +30,15 @@ body {
 
 header {
     height: 800px;
-    background: url('../img/hero.png');
+    background: url('../img/hero.png');   /* We want the background to extend to the edges when a screen is larger than 1200px, so we are applying this style to the parent container without a fixed width. */
+
     background-size: cover;
 }
 
 header h1 {
     font-family: 'Lora', serif;
     font-size: 30px;
-    letter-spacing: -.6px;           /* photoshop letter spacing (px) * font-size (px) / 1000 = css letter-spacing (px) */
+    letter-spacing: -.6px;   /* Photoshop letter spacing (px) * font-size (px) / 1000 = css letter-spacing (px) */
     color: #bbc085;
     margin: 0;
     padding: 115px 0 105px 25px;
@@ -76,8 +79,8 @@ header h2 span {
 
 /****** ABOUT ******/
 
-#about .full-width {
-    padding: 140px 0;
+#about {
+    padding: 132px 0;
 }
 
 #about h2 {
@@ -102,9 +105,7 @@ header h2 span {
 #work {
     background-color: #f9ceb7;
     text-align: center;
-}
-#work .full-width {
-    padding: 130px 0;
+    padding: 115px 0;
 }
 
 #work img {
@@ -131,9 +132,7 @@ header h2 span {
 
 #contact {
     background-color: #ebebeb;
-}
-#contact .full-width {
-    padding: 120px 0;
+    padding: 110px 0;
 }
 
 #contact img#contact-img {
